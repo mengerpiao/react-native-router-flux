@@ -48,11 +48,11 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   titleWrapper: {
-    marginTop: 10,
+    marginTop: 20,
     position: 'absolute',
     ...Platform.select({
       ios: {
-        top: 15,
+        top: 12,
       },
       android: {
         top: 0,
@@ -81,11 +81,11 @@ const styles = StyleSheet.create({
   },
   backButton: {
     width: 100,
-    height: 37,
+    height: 35,
     position: 'absolute',
     ...Platform.select({
       ios: {
-        top: 15,
+        top: 22,
       },
       android: {
         top: 3,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     ...Platform.select({
       ios: {
-        top: 15,
+        top: 22,
       },
       android: {
         top: 0,
