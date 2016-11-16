@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
         top: 3,
       },
     }),
-    left: 2,
+    left: 10,
     padding: 8,
     flexDirection: 'row',
   },
