@@ -42,10 +42,11 @@ import _backButtonImage from './back_chevron.png';
 const styles = StyleSheet.create({
   title: {
     textAlign: 'center',
-    color: '#ffffff',
-    fontSize: 18,
+    color: 'black',
+    fontSize: 17,
     width: 180,
     alignSelf: 'center',
+    fontWeight: 'bold',
   },
   titleWrapper: {
     marginTop: 20,
@@ -55,14 +56,14 @@ const styles = StyleSheet.create({
         top: 12,
       },
       android: {
-        top: 0,
+        top: -10,
       },
     }),
     left: 0,
     right: 0,
   },
   header: {
-    backgroundColor: '#333237',
+    backgroundColor: '#F6F6F6',
     paddingTop: 0,
     top: 0,
     ...Platform.select({
