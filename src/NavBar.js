@@ -37,7 +37,8 @@ import {
 } from 'react-native';
 import Actions from './Actions';
 import _drawerImage from './menu_burger.png';
-import _backButtonImage from './back_chevron.png';
+import _backButtonImage from '../../../app/images/icon_back.png';
+import image from '../../../app/images/icon_back.png'
 
 const styles = StyleSheet.create({
   title: {
@@ -86,7 +87,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     ...Platform.select({
       ios: {
-        top: 22,
+        top: 25,
       },
       android: {
         top: 3,
@@ -98,14 +99,14 @@ const styles = StyleSheet.create({
   },
   rightButton: {
     width: 100,
-    height: 37,
+    height: 35,
     position: 'absolute',
     ...Platform.select({
       ios: {
         top: 25,
       },
       android: {
-        top: 10,
+        top: 3,
       },
     }),
     right: 2,
@@ -117,10 +118,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
     ...Platform.select({
       ios: {
-        top: 22,
+        top: 25,
       },
       android: {
-        top: 0,
+        top: 3,
       },
     }),
     left: 10,
