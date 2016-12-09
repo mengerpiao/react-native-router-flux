@@ -37,8 +37,8 @@ import {
 } from 'react-native';
 import Actions from './Actions';
 import _drawerImage from './menu_burger.png';
-import _backButtonImage from '../../../app/images/icon_back.png';
-import image from '../../../app/images/icon_back.png'
+import _backButtonImage from './icon_back.png';
+import image from './icon_back.png'
 
 const styles = StyleSheet.create({
   title: {
