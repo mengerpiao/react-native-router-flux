@@ -39,6 +39,7 @@ import Actions from './Actions';
 import _drawerImage from './menu_burger.png';
 import _backButtonImage from './icon_back.png';
 import image from './icon_back.png'
+import Device from '../../../app/utils/Device'
 
 const styles = StyleSheet.create({
   title: {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   titleWrapper: {
-    marginTop: 20,
+    marginTop: Device.isIPhoneX()?44:20,
     position: 'absolute',
     ...Platform.select({
       ios: {
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
     top: 0,
     ...Platform.select({
       ios: {
-        height: 64,
+        height: Device.isIPhoneX()? 88: 64,
       },
       android: {
         height: 44,
